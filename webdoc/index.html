@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFS webdoc</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/arial-rounded-mt-bold" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Her bliver de forskellige faktabokse lavet -->
+    <section class="fakta-container" id="billede1">
+        <div class="fc-container">
+            <p>Vi lever i et globalt samfund med samarbejde og kommunikation på tværs af landegrænser.<br>
+                Danmark havde i år 2020 over 8.100 internationale studerende på forskellige uddannelsestrin.</p>
+            </div>
+    </section>
+    <section class="fakta-container" id="billede2">
+        <div class="fc-container">
+            <p>Hvert år hjælper AFS mere end 500 mennesker med at møde andre kulturer i over 30 forskellige lande, heriblandt studerende der ønsker at komme på udvekslingsophold hos en værtsfamilie.</p>
+        </div>
+    </section>
+    <section class="fakta-container" id="billede3">
+        <div class="fc-container">
+            <p>Dette er kun muligt takket være de fantastiske værtsfamilier som åbner deres hjem for en student fra et andet land. <br>Ofte er det starten på et livslangt venskab.
+                <br><br>
+                Her er et af dem
+            </p>
+        </div>
+    </section>
+        <!-- Her starter værtsfamilie området -->
+    <section class="vf" id="vf">
+        <h1>Mød en værtsfamilie og deres udvekslingsstuderende</h1>
+        <h4>Herunder kan du møde en værtsfamilie og deres udvekslingsstuderende, klik på de spørgsmål du ønsker besvaret og få familiens inspirerende fortælling</h4>
+        <img src="/img/Kirsten 1.png" alt="Kirsten" class="polaroid" onclick="visKirsten()">
+        <img src="/img/Alessandro 1.png" alt="Alessandro" class="polaroid" onclick="visAlessandro()">
+        <img src="/img/Emil 1.png" alt="Emil" class="polaroid" onclick="visEmil()">
+        <div class="info-boks">
+            <div id="info-kirsten"></div>
+            <div id="info-alessandro"></div>
+            <div id="info-emil"></div>
+        </div>
+
+            <!-- Gammel pop up ide -->
+        
+        <!-- <div class="popup" id="Kirsten">
+            <div class="popup-tekst">
+                Kirsten er værtsfamiliens mor. Hun har i sine egne studiedage selv været på udveksling i Frankrig og er meget interesseret i andre kulturer.
+                Det er anden gang Kirsten er værtsmor, og hun håber at oplevelsen vil ende med et livslangt venskab.                 
+             <a class="close" href="#vf">X</a>
+         </div>
+        </div>
+           <div class="popup" id="alessandro">
+            <div class="popup-tekst">
+                Alessandro er familiens udvekslingsstuderende. Han er 17 år og kommer fra området omkring Genoa i Norditalien. Han er meget sportsglad, især for fodbold og basketball. 
+                Alessandro er taget på udveksling for at udfordre sig selv med en masse nye oplevelser.
+             <a class="close" href="#vf">X</a>
+         </div>
+        </div>
+           <div class="popup" id="Emil">
+            <div class="popup-tekst">
+                Emil er det ældste barn i værtsfamilien. Han og hans to brødre elsker sport og vil meget gerne spille fodbold med Alessandro. 
+                Emil synes det er rigtig sjovt at have en udvekslingsstuderende i familien.
+             <a class="close" href="#vf">X</a>
+           </div>
+        </div>
+        <h1>Mød en værtsfamilie og deres udvekslingsstuderende</h1>
+        <h4>Herunder kan du møde en værtsfamilie og deres udvekslingsstuderende, klik på de spørgsmål du ønsker besvaret og få familiens inspirerende fortælling</h4>
+        <img src="img/familie1.png" alt="værtsfamilie" width="1900px" usemap="#familie">
+        <map name="familie">
+            <area shape="rect" coords="342,169,723,600" alt="Kirsten" title="Kirsten" href="#Kirsten">
+            <area shape="rect" coords="723,142,1150,653" alt="Kirsten" title="Alessandro" href="#alessandro">
+            <area shape="rect" coords="1150,169,1500,600" alt="Kirsten" title="Emil" href="#Emil">
+        </map> -->
+        <!-- <h2>Vil i som familie have en ny oplevelse sammen og gøre<br> en stor forskel for en udvekslingsstuderende?</h2> -->
+
+    </section>
+    <!-- <section class="interview">
+        <div class="grid">
+            <div class="interview1">
+                <div class="video">
+                    <video src="videos/Interviewklip 1 redigeret.mp4"  height="225px" controls poster="/img/thumbnail1.PNG"></video>
+                </div>
+                <div class="title">
+                    <h2>Dette er en test af hvordan det vil se ud</h2>
+                </div>
+            </div>
+            <div class="interview2">   
+                <div class="video">
+                    <video src="videos/Interviewklip 2.mp4"  height="225px" controls poster="/img/thumbnail2.PNG"></video>
+                </div>
+                <div class="title">
+                    <h2>Dette er en test af hvordan det vil se ud</h2>
+                </div>
+            </div>
+            <div class="interview3">
+                <div class="video">
+                    <video src="videos/Interviewklip 3.mp4"  height="225px" controls poster="/img/thumbnail3.PNG"></video>
+                </div>
+                <div class="title">
+                    <h2>Dette er en test af hvordan det vil se ud</h2>
+                </div>
+            </div>
+            <div class="interview4">     
+                <div class="video">
+                    <video src="videos/Interviewklip 4.mp4"  height="225px" controls poster="/img/thumbnail4.PNG"></video>
+                </div>
+                <div class="title">
+                    <h2>Dette er en test af hvordan det vil se ud</h2>
+                </div>
+            </div>
+            <div class="interview5">
+                <div class="video">
+                    <video src="videos/Interviewklip 5.mp4"  height="225px" controls poster="/img/thumbnail5.PNG"></video>
+                </div>
+                <div class="title">
+                    <h2>Dette er en test af hvordan det vil se ud</h2>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+        <!-- her bliver videoerne sat ind -->
+    <section class="interviewv2">
+        <div class="gradient">
+        <div class="interviewboks">
+            <div class="title">
+                <h2>Har I været værtsfamilie før?</h2>
+            </div>
+            <div class="video">
+                <video src="videos/Interviewklip 1 redigeret.mp4"  height="225px" controls poster="/img/Interview 1 snap.jpg"></video>
+            </div>
+        </div>
+        </div>
+        <div class="gradient">
+        <div class="interviewboks">  
+            <div class="title">
+                <h2>Hvad er fordelene og ulemperne ved at tage på udveksling?</h2>
+            </div>
+            <div class="video">
+                <video src="videos/Interviewklip 2.mp4"  height="225px" controls poster="/img/Interview 2 snap.jpg"></video>
+            </div>
+        </div>
+        </div>
+        <div class="gradient">
+        <div class="interviewboks">
+            <div class="title">
+                <h2>Hvad er det vigtigste ved en værtsfamilie?</h2>
+            </div>
+            <div class="video">
+                <video src="videos/Interviewklip 3.mp4"  height="225px" controls poster="/img/Interview 3 snap.jpg"></video>
+            </div>
+        </div>
+        </div>
+        <div class="gradient">
+        <div class="interviewboks">
+            <div class="title">
+                <h2>Hvad har overrasket jer ved hele oplevelsen?</h2>
+            </div>
+            <div class="video">
+                <video src="videos/Interviewklip 4.mp4"  height="225px" controls poster="/img/Interview 4 snap.jpg"></video>
+            </div>
+        </div>
+        </div>
+        <div class="gradient">
+        <div class="interviewboks">
+            <div class="title">
+                <h2>Har I haft nogle bekymringer omkring at blive værtsfamilie?</h2>
+            </div>
+            <div class="video">
+                <video src="videos/Interviewklip 5.mp4"  height="225px" controls poster="/img/Interview 5 snap.jpg"></video>
+            </div>
+        </div>
+        </div>
+            <!-- Her bliver before/after slider sat ind -->
+        <h1>Hvordan er det at have en udvekslingsstuderende i familien?</h1>
+        <section class="slider">
+        <div class="container">
+            <div class="compare">
+                <div class="before">
+                    <div class="after"></div>
+                </div>
+                <input type="range" min="0" max="800" step="1" id="compare-ip">
+            </div>
+        </div>
+    </section>
+        <!-- her bliver citaterne sat ind -->
+    <div class="citat-container">
+        <h2 class="citat">“Vores drenge er vildt glade for Alessandro!<br> 
+            De spørger tit om han vil lege, og han spørger også dem, om de vil være med til at lave noget.” 
+        </h2>
+        <h3 class="citatperson">- Kirsten</h3>
+    </div>
+    <div class="citat-container">
+        <h2 class="citat">“I really like my host family.<br>
+            They make me feel like a part of the family, not just a guest, and I think that’s the most important thing about living with a host family” 
+        </h2>
+        <h3 class="citatperson">- Alessandro</h3>
+    </div>
+    <div class="citat-container">
+        <h2 class="citat">“Snak om tingene!<br> 
+            Der kommer et nyt menneske ind i din familie, med en anden kultur, og I vil have nogle lidt forskellige vaner og kulturelle normer.<br> 
+            En god opfølgende snak en gang imellem gør, at I forstår hinanden meget bedre, og at der ikke opstår gnidninger.” 
+        </h2>
+        <h3 class="citatperson">- Kirsten</h3>
+    </div>
+    <div class="citat-container">
+        <h2 class="citat">“I’ve come to feel really comfortable with my host family.<br> 
+            I feel like I can talk to them if I have any problems and they will listen to me and support me.” 
+        </h2>
+        <h3 class="citatperson">- Alessandro</h3>
+    </div>
+    <h1>Det er nu I skal gribe chancen!<br> Meld jer til her og byd kultur og samvær velkommen!</h1>
+    <a href="https://www.afs.dk/bliv-vaertsfamilie/" target="_blank"><button class="tilmeld">Tilmeld her</button></a>
+    </section>
+
+    <!-- her starter footer -->
+    <footer>
+    <div class="omAFS">
+        <h1>Om AFS</h1>
+        <p>AFS drives af frivillige, og er en non-profit forening, som tilbyder udvekslingsprogrammer med det formål, at skabe interkulturel forståelse og læring verden over.</p>
+    </div>
+    <div class="kontakt">
+        <h1>Kontakt AFS</h1>
+        <ul>
+            <li>AFS Interkultur Danmark</li>
+            <li>Nordre Fasanvej 111</li>
+            <li>2000 Frederiksberg</li>
+            <li>Tlf. +45 38343300</li>
+            <li>Mail: afs.interkultur@afs.org</li>
+        </ul>
+    </div>
+    <div class="omAFS">
+        <h1>Bliv værtsfamilie - invitér verden indenfor</h1>
+        <p>Kunne I tænke jer at gøre en kæmpe forskel for et andet menneske og samtidig lære om en anden kultur, få nye oplevelser og samvær på en helt ny måde?</p>
+    </div>
+    </footer>
+    <script src="webdoc.js"></script>
+</body>
+</html>

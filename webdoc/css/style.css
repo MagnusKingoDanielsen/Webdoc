@@ -1,0 +1,321 @@
+/* Her starter CSS for fakta siderne*/
+/* Styling af fakta områderne i starten af siden med parallax*/
+.fakta-container, .fakta-container1{
+    width: 100%;
+    height: 105vh;
+    background-image: url(/img/Baggrund-1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.fc-container{
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fc-container p{
+    font-size: 2.5vw;
+    font-family: 'Lato', sans-serif;
+    padding: 100px;
+    line-height: 1.5;
+}
+/* De forskellige baggrundsbilleder*/
+#billede1{
+    background-image: url(/img/Baggrund-1.jpg);
+}
+#billede2{
+    background-image: url(/img/Baggrund-2.jpg);
+}
+#billede3{
+    background-image: url(/img/Baggrund-3.jpg);
+}
+
+/* Her starter CSS for Værtsfamilie afsnittet*/
+
+.vf{
+    background-color: rgb(241,241,241,1);
+    text-align: center;
+    display: block;
+}
+.vf h1,h2{
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(28, 122, 191, 1);
+}
+.vf h2{
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+.vf h4{
+    font-family: 'Lato', sans-serif;
+} 
+/* Styling af boksende hvor information til billederne skal stå*/
+.info-boks {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#info-kirsten {
+    width: 381px;
+    height: auto;
+    border: 1px transparent;
+}
+#info-alessandro {
+    width: 447px;
+    height: auto;
+    border: 1px transparent;
+}
+#info-emil {
+    width: 376px;
+    height: auto;
+    border: 1px transparent;
+}
+.polaroid {
+    cursor: pointer;
+}
+
+/* Her starter CSS for pop up boksene til polaroid billederne (gammel design ide)*/
+/* 
+.popup{
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 300ms;
+}
+.popup-tekst{
+    padding: 20px;
+    background-color: rgba(28, 122, 191, 1);
+    color: white;
+    font-size: 15px;
+    margin-top: 50vh;
+    margin-left: 40vw;
+    position: absolute;
+    min-width: 300px;
+}
+
+.popup > .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: black;
+    padding: 4px 10px;
+}
+.popup:target {
+    opacity: 1;
+    transform: scale(1);
+}
+ */
+/* Her starter CSS for Video afsnittet (vi gik væk fra grid ide)*/
+/* 
+.grid {
+    display: grid;
+    background: linear-gradient(135deg, rgba(117,55,153,1) 0%, rgba(67,84,171,1) 60%, rgba(24,109,187,1) 100%);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+} 
+.interview1 { 
+    grid-area: 1 / 1 / 2 / 2;
+}
+.interview2 { 
+    grid-area: 1 / 2 / 2 / 3;
+}
+.interview3 { 
+    grid-area: 2 / 1 / 3 / 2;
+}
+.interview4 { 
+    grid-area: 2 / 2 / 3 / 3;
+}
+*/
+/* Her starter CSS for Video afsnittet*/
+
+.interview5 { 
+    /* grid-area: 3 / 1 / 4 / 3; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title h2{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.interview1, .interview2, .interview3, .interview4{
+    display: flex;
+    flex-direction: column;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.interviewv2 { 
+    display: flex;
+    min-width: 99vw;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    color: rgba(28, 122, 191, 1);
+    text-align: center;
+}
+.interviewv2 h1{
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.interviewboks { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 960px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.gradient{
+    display: flex;
+    min-width: 99vw;
+    background: linear-gradient(90deg, rgba(245,133,35,1) 0%, rgba(248,159,28,1) 60%, rgba(253,190,9,1) 100%);
+    justify-content: center;
+}
+
+/* Her starter CSS for før/efter Slider */
+
+.slider{
+    display: block;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.compare{
+    position: relative;
+    width: 800px;
+    height: 450px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.15);
+}
+.compare .before{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/6698e2547f55088c75945db92b9269e5a6969d6f1.jpg);
+}
+.compare .after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 320px;
+    height: 450px;
+    background-image: url(/img/6698e2547f55088c75945db92b9269e5a6969d6f.jpg);
+    z-index: 2;
+}
+.compare input{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-appearance: none;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.compare input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    display:block;
+    width: 5px;
+    height: 450px;
+    background: #5b83dc;
+    cursor: pointer;
+}
+.compare input::-webkit-slider-thumb:active {
+    background: #e25a5a;
+    transition: all 300ms ease-in-out;
+}
+/* Her starter CSS for Citater og tilmeld knappen*/
+.citat-container {
+    max-width: 650px;
+}
+.interviewv2 h1{
+    padding-top: 50px;
+}
+.citat, .citatperson {
+    background: linear-gradient(90deg,#79b95e,#26b1c2);
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.citatperson {
+    font-style: normal;
+    font-size: 1.2rem;
+}
+.tilmeld{
+    margin: 100px;
+    width: 200px;
+    height: 75px;
+    border-radius: 5px;
+    box-shadow: 5px;
+    background: linear-gradient(90deg,#79b95e,#26b1c2);
+    border: 0px solid white;
+    color: white;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Her starter CSS for Footer*/
+footer{
+    display: flex;
+    min-width: 100%;
+    justify-content: space-around;
+    background: linear-gradient(135deg, rgba(117,55,153,1) 0%, rgba(67,84,171,1) 60%, rgba(24,109,187,1) 100%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.omAFS{
+    display: block;
+    width: 400px;
+    margin-right: 50px;
+    color: white;
+    line-height: 1.5;
+}
+.kontakt{
+    display: block;
+    width: 200px;
+    margin-left: 50px;
+    color: white;
+}
+.kontakt li{
+    padding-top: 5px;
+    line-height: 1.5;
+}
